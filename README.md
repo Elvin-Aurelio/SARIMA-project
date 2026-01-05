@@ -94,8 +94,4 @@ Insight semacam ini bisa digunakan untuk menyarankan:
 * Perencanaan pengadaan stok ke depannya
 
 ---
-### Requirements
-```bash
-pip install pandas numpy matplotlib seaborn joblib statsmodels scikit-learn gender-guesser pytrends
-```
 
