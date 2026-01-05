@@ -1,8 +1,8 @@
-# 📈 Bagian 1: Prediksi Penjualan Mobil Mingguan dengan SARIMA
+# Bagian 1: Prediksi Penjualan Mobil Mingguan dengan SARIMA
 
 Repositori ini berisi eksperimen dan pengembangan model prediksi penjualan mobil mingguan menggunakan pendekatan time series klasik: **SARIMA**. Beberapa pendekatan alternatif seperti penggunaan fitur eksternal dari Google Trends dan hybrid model sempat dieksplorasi, namun **tidak memberikan peningkatan signifikan**, sehingga **model final tetap menggunakan SARIMA murni**.
 
-## 📂 Struktur Folder
+## Struktur Folder
 
 ```
 .
@@ -12,7 +12,7 @@ Repositori ini berisi eksperimen dan pengembangan model prediksi penjualan mobil
 └── README.md                   # Dokumentasi proyek
 ```
 
-## ⚙️ Fitur Proyek
+## Fitur Proyek
 
 * Prediksi penjualan mobil per minggu berdasarkan data historis
 * Evaluasi menggunakan sMAPE, MAE, log-RMSE, dan R²
@@ -22,14 +22,14 @@ Repositori ini berisi eksperimen dan pengembangan model prediksi penjualan mobil
   * SARIMAX (dengan Google Trends) — *tidak dipakai di model final*
   * Hybrid SARIMA + Polynomial Regression — *hanya eksplorasi*
 
-## 🧪 Dataset
+## Dataset
 
 Dataset utama: `car_data.csv`
 
 * Fitur utama: Tanggal dan Car ID
 * Penjualan dihitung per minggu
 
-## 📊 Hasil Utama
+## Hasil Utama
 
 | Model                          | Mean sMAPE  |
 | ------------------------------ | ----------- |
@@ -39,7 +39,7 @@ Dataset utama: `car_data.csv`
 
 Model SARIMA dipilih karena memberikan hasil yang kompetitif dan stabil tanpa membutuhkan data eksternal tambahan.
 
-## 🧠 Cara Pakai
+## Cara Pakai
 
 ### 1. Instalasi Dependensi
 
@@ -57,11 +57,11 @@ python predict.py
 
 Output akan berupa prediksi penjualan mobil 10 minggu ke depan.
 
-## 📈 Visualisasi
+## Visualisasi
 
 Model telah divisualisasikan lengkap dalam `datathon_model.ipynb`, termasuk evaluasi per fold dan perbandingan antar pendekatan.
 
-## ❌ Kenapa Tidak Pakai Google Trends?
+## Kenapa Tidak Pakai Google Trends?
 
 Eksperimen menggunakan data eksternal (Google Trends) sempat dilakukan dengan pendekatan SARIMAX dan normalisasi, namun:
 
@@ -73,7 +73,7 @@ Akhirnya model SARIMA standar dipilih sebagai solusi terbaik.
 
 ---
 
-## 🧠 Bagian 2: Analisis Distribusi Penjualan
+## Bagian 2: Analisis Distribusi Penjualan
 
 Notebook `datathon_analysis.ipynb` berisi analisis spasial dari penjualan mobil untuk menjawab pertanyaan seperti:
 
@@ -81,7 +81,7 @@ Notebook `datathon_analysis.ipynb` berisi analisis spasial dari penjualan mobil 
 * **Jenis mobil apa yang paling banyak diminati di tiap region?**
 * **Perlu tidaknya redistribusi stok antar dealer/daerah?**
 
-### 📍 Contoh Insight:
+### Contoh Insight:
 
 * Model **Prizm** paling laku di Austin (96 unit) dan Janesville (81 unit) Ini jadi sinyal kuat bahwa Prizm cocok diprioritaskan di dua wilayah itu.
 * Model **Diamante** perlu perhatian khusus pada warna Merah karena proporsinya cukup besar.
@@ -94,7 +94,7 @@ Insight semacam ini bisa digunakan untuk menyarankan:
 * Perencanaan pengadaan stok ke depannya
 
 ---
-### 🧰 Requirements
+### Requirements
 ```bash
 pip install pandas numpy matplotlib seaborn joblib statsmodels scikit-learn gender-guesser pytrends
 ```
