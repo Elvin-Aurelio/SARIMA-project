@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+seaborn
+joblib
+statsmodels
+scikit-learn
+gender-guesser
+pytrends
